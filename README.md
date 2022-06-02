@@ -22,7 +22,7 @@ Smoothing an image is making each pixel the average of the pixels around it. Thi
 A Laplacian pyramid is the difference between a Gaussian pyramid and the upsampled next Gaussian pyramid. You could either input a Gaussian pyramid or the original image and the desired level. To get the Laplacian pyramid, generate the Gaussian pyramid(if it wasn’t imputed) and subtract the upsampled next Gaussian pyramid. Collapsing a Laplacian pyramid is to find the full resolution image with a Laplacian pyramid
 
 
-![](Laplacian_Pyramid.png)
+![](Equation.png)
 
 
 This is the mathematical relationship between the Gaussian and Laplacian pyramids.
