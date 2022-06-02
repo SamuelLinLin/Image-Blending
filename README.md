@@ -17,18 +17,26 @@ Smoothing an image is making each pixel the average of the pixels around it. Thi
 
 
 ![](Laplacian_Pyramid.png)
+
+
 A Laplacian pyramid is the difference between a Gaussian pyramid and the upsampled next Gaussian pyramid. You could either input a Gaussian pyramid or the original image and the desired level. To get the Laplacian pyramid, generate the Gaussian pyramid(if it wasn’t imputed) and subtract the upsampled next Gaussian pyramid. Collapsing a Laplacian pyramid is to find the full resolution image with a Laplacian pyramid
 
 
 ![](Laplacian_Pyramid.png)
+
+
 This is the mathematical relationship between the Gaussian and Laplacian pyramids.
 
 
 ![](Upsampled_Example.png)
+
+
 To upsample an image, you expand a image and make the new pixels the average of the pixels around it.
 
 
 ![](Image_Blending_1.png)
+
+
 To blend two images, you need to do the following steps:
 
 1. Combine the images using the mask and find the top-level Gaussian pyramid
@@ -39,6 +47,8 @@ To blend two images, you need to do the following steps:
 
 
 ![](Mask.png)
+
+
 The mask is used to help assign images to different parts.
 
 
