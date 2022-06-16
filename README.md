@@ -12,12 +12,14 @@ When you just combine two images together, the connection section looks sharp an
 
 
 
+
 A Gaussian Pyramid consists of downsampled images by a factor of two. The input is an image. The output is a downsampled image. To generate a Gaussian pyramid, you first need to smooth the image. Then, you downsample by a factor of 2. You repeat this process until you reach the desired downsample factor. Downsampling an image is decreasing the dimensions or pixels by choosing every other pixel. 
 
 
 ![](Smoothed_Image.png)
 
 ###### Smoothed Image
+
 
 
 
@@ -30,10 +32,12 @@ Smoothing an image is making each pixel the average of the pixels around it. Thi
 
 
 
+
 A Laplacian pyramid is the difference between a Gaussian pyramid and the upsampled next Gaussian pyramid. You could either input a Gaussian pyramid or the original image and the desired level. To get the Laplacian pyramid, generate the Gaussian pyramid(if it wasn’t imputed) and subtract the upsampled next Gaussian pyramid. Collapsing a Laplacian pyramid is to find the full resolution image with a Laplacian pyramid
 
 
 ![](Mathematical_Equation.png)
+
 
 
 
@@ -46,12 +50,14 @@ This is the mathematical relationship between the Gaussian and Laplacian pyramid
 
 
 
+
 To upsample an image, you expand a image and make the new pixels the average of the pixels around it.
 
 
 ![](Image_Blending_1.png)
 
 ###### Image Blending
+
 
 
 
@@ -65,6 +71,7 @@ To blend two images, you need to do the following steps:
 
 
 ![](Mask.png)
+
 
 
 The mask is used to help assign images to different parts.
